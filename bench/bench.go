@@ -22,8 +22,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/nats-io/nats.go"
 	"github.com/nats-io/nuid"
+	"github.com/troyaf/nats.go"
 )
 
 // A Sample for a particular client

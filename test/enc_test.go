@@ -19,10 +19,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nats-io/nats.go"
-	"github.com/nats-io/nats.go/encoders/builtin"
-	"github.com/nats-io/nats.go/encoders/protobuf"
-	"github.com/nats-io/nats.go/encoders/protobuf/testdata"
+	"github.com/troyaf/nats.go"
+	"github.com/troyaf/nats.go/encoders/builtin"
+	"github.com/troyaf/nats.go/encoders/protobuf"
+	"github.com/troyaf/nats.go/encoders/protobuf/testdata"
 )
 
 func NewDefaultEConn(t *testing.T) *nats.EncodedConn {

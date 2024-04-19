@@ -27,8 +27,8 @@ import (
 
 	"github.com/nats-io/nats-server/v2/server"
 
-	"github.com/nats-io/nats.go"
-	"github.com/nats-io/nats.go/micro"
+	"github.com/troyaf/nats.go"
+	"github.com/troyaf/nats.go/micro"
 
 	natsserver "github.com/nats-io/nats-server/v2/test"
 )

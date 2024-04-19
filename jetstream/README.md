@@ -80,8 +80,8 @@ import (
     "strconv"
     "time"
 
-    "github.com/nats-io/nats.go"
-    "github.com/nats-io/nats.go/jetstream"
+    "github.com/troyaf/nats.go"
+    "github.com/troyaf/nats.go/jetstream"
 )
 
 func main() {
@@ -570,7 +570,7 @@ setting various headers. Additionally, for `PublishMsg()` headers can be set
 directly on `nats.Msg`.
 
 ```go
-// All 3 implementations are work identically 
+// All 3 implementations are work identically
 ack, err := js.PublishMsg(ctx, &nats.Msg{
     Data:    []byte("hello"),
     Subject: "ORDERS.new",
@@ -647,7 +647,7 @@ kv, _ := js.CreateKeyValue(ctx, jetstream.KeyValueConfig{Bucket: "profiles"})
 kv.Put(ctx, "sue.color", []byte("blue"))
 
 // Get an entry for a given key
-// Entry contains key/value, but also metadata (revision, timestamp, etc.)) 
+// Entry contains key/value, but also metadata (revision, timestamp, etc.))
 entry, _ := kv.Get(ctx, "sue.color")
 
 // Prints `sue.color @ 1 -> "blue"`
@@ -990,4 +990,4 @@ fmt.Println(status.Size()) // prints the size of the bucket in bytes
 
 ## Examples
 
-You can find more examples of `jetstream` usage [here](https://github.com/nats-io/nats.go/tree/main/examples/jetstream).
+You can find more examples of `jetstream` usage [here](https://github.com/troyaf/nats.go/tree/main/examples/jetstream).

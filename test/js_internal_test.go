@@ -25,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nats-io/nats.go"
+	"github.com/troyaf/nats.go"
 )
 
 // Need access to internals for loss testing.

@@ -2,7 +2,7 @@ language: go
 go:
 - "1.22.x"
 - "1.21.x"
-go_import_path: github.com/nats-io/nats.go
+go_import_path: github.com/troyaf/nats.go
 install:
 - go get -t ./...
 - curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin
