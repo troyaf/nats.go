@@ -572,7 +572,7 @@ func (nc *Conn) wsInitHandshake(u *url.URL) error {
 	if tlsRequired {
 		scheme = "https"
 	}
-	ustr := fmt.Sprintf("%s://%s", scheme, u.Host)
+	ustr := fmt.Sprintf("%s://%s%s", scheme, u.Host, u.Path)
 
 	if nc.Opts.ProxyPath != "" {
 		proxyPath := nc.Opts.ProxyPath
